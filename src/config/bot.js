@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "",
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 4, 
       },
     ],
   },
@@ -204,7 +204,7 @@ export const botConfig = {
     defaultCategory: null,
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: [Owner,staff],
 
     // Priority options users/staff can assign.
     priorities: {
@@ -289,10 +289,10 @@ export const botConfig = {
   // =========================
   verification: {
     // Message shown when posting the verification panel.
-    defaultMessage: "Click the button below to verify yourself and gain access to the server!",
+    defaultMessage: "Для дальнейшего общения на сервере, необходимо пройти верификацию!",
 
     // Text on the verification button.
-    defaultButtonText: "Verify",
+    defaultButtonText: "Верифицировать",
 
     // Automatic verification behavior.
     autoVerify: {
